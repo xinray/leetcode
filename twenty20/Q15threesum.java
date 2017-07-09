@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.twenty20;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by ray on 1/3/17.
  */
-public class threesum {
+public class Q15threesum {
     public class Solution {
         public List<List<Integer>> threeSum(int[] nums) {
             List<List<Integer>> resultList = new ArrayList<List<Integer>>();
