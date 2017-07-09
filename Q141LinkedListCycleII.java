@@ -3,10 +3,22 @@ package leetcode;
 /**
  * Created by ray on 3/26/17.
  */
-class Q2AddTwoNumbers {
-    public ListNode detectCycle(ListNode head) {
 
-        if(head==null) return null;
+
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) {
+        val = x;
+        next = null;
+    }
+}
+
+
+class linkedlistcycle {
+    public boolean hasCycle(ListNode head) {
+
+        if(head==null) return false;
 
         ListNode first = head;
         ListNode second = head;
@@ -16,15 +28,10 @@ class Q2AddTwoNumbers {
             second = second.next.next;
 
             if(first == second) {
-                while(head != first) {
-                    head = head.next;
-                    first = first.next;
-                }
-                return first;
+                return true;
             }
         }
 
-        return null;
+        return false;
     }
 }
-
