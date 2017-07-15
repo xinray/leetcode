@@ -1,14 +1,8 @@
-package leetcode.thirty30;
+package leetcode.hundred100;
 
-/**
- * Created by ray on 3/27/17.
- */
+import leetcode.hundred100.ListNode;
+
 public class Q21MergeTwoSortedLists {
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-    }
     public class Solution {
         public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
             if (l1 == null ) return l2;

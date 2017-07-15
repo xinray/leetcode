@@ -1,0 +1,13 @@
+package leetcode.twohundred200;
+
+/**
+ * Created by ray on 7/15/17.
+ */
+public class Q111MinimumDepthofBinaryTree {
+    public int minDepth(TreeNode root) {
+        if(root == null) return 0;
+        int left = minDepth(root.left);
+        int right = minDepth(root.right);
+        return (left==0 || right == 0) ?left+right+1:Math.min(left,right) +1;
+    }
+}

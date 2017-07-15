@@ -1,17 +1,9 @@
-package leetcode.thirty30;
+package leetcode.hundred100;
 
 
 /**
  * Created by ray on 3/27/17.
  */
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}
 public class Q24SwapNodesinPairs {
     public ListNode swapPairs(ListNode head) {
         if(head == null || head.next == null) return head;

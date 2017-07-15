@@ -3,14 +3,6 @@ package leetcode.hundred100;
 /**
  * Created by ray on 7/12/17.
  */
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}
 public class Q92ReverseLinkedListII {
     public ListNode reverseBetween(ListNode head, int m, int n) {
         if(head == null) return null;
